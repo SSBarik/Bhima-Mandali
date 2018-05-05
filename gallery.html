@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bhima Mandali - The Ancient Civilization of Odisha</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="bhimamandali.css">
+  <link rel="shortcut icon" href="img/l1.png" type="image/x-icon" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+<nav class="navbar navbar-default navbar-fixed-top w3-animate-zoom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand w3-animate-left" href="index.html" style="font-family: 'Berkshire Swash';font-size:26px;">Bhima  Mandali</a>
+    </div>
+    <div class="collapse navbar-collapse w3-animate-right" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+       <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#myPage">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div id="bg" class="jumbotron jumbotron-fluid" style="background-color: #4D342D">
+  <div class="container">
+    <center>
+	<p class="lead w3-animate-left" style="color:#FFFFFF;">Our</p>
+	<h1 class="display-4 w3-animate-zoom" style="color:#FFFFFF;font-weight:bold">Awesome</h1>
+    <p class="lead w3-animate-right" style="color:#FFFFFF;">Gallery</p></center>
+  </div>
+</div>
+
+
+<div class="container" >
+<img class="myImg" style="margin: 10px;" style="margin: 10px;" src="img/slide-1.jpg" alt="A breathtaking view @ Bhima Mandali" width="300" height="200">
+<img class="myImg" style="margin: 10px;" src="img/slide-2.jpg" alt="A breathtaking view @ Bhima Mandali" width="300" height="200">
+<img class="myImg" style="margin: 10px;" src="img/slide-3.jpg" alt="A breathtaking view @ Bhima Mandali" width="300" height="200">
+<img class="myImg" style="margin: 10px;" src="img/map.jpg" alt="A breathtaking view @ Bhima Mandali" width="300" height="200">
+<img class="myImg" style="margin: 10px;" src="img/pic2.jpg" alt="A breathtaking view @ Bhima Mandali" width="300" height="200">
+<img class="myImg" style="margin: 10px;" src="img/pic6.jpg" alt="A breathtaking view @ Bhima Mandali" width="300" height="200">
+<img class="myImg" style="margin: 10px;" src="img/slide-1.jpg" alt="A breathtaking view @ Bhima Mandali" width="300" height="200">
+<img class="myImg" style="margin: 10px;" src="img/slide-2.jpg" alt="A breathtaking view @ Bhima Mandali" width="300" height="200">
+<img class="myImg" style="margin: 10px;" src="img/slide-3.jpg" alt="A breathtaking view @ Bhima Mandali" width="300" height="200">
+<img class="myImg" style="margin: 10px;" src="img/map.jpg" alt="A breathtaking view @ Bhima Mandali" width="300" height="200">
+<img class="myImg" style="margin: 10px;" src="img/pic2.jpg" alt="A breathtaking view @ Bhima Mandali" width="300" height="200">
+<img class="myImg" style="margin: 10px;" src="img/pic6.jpg" alt="A breathtaking view @ Bhima Mandali" width="300" height="200">
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+<script>
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Footer<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+<div id="bg" class="footer">
+  <p class="m-0" style="color:#FFFFFF;">Developed by team <span><a href="https://snskrit.wordpress.com/" target="_blank" style="color:white;">SNSKRIT</a></span></p>
+  <p class="m-0" style="color:#FFFFFF;">Bhima Mandali © 2018</p>
+</div>
+
+
+</body>
+</html>
+
+
